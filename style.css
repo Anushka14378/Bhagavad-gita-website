@@ -11,7 +11,7 @@ body{
     background-size: cover;
 }
 .a1{   
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: brown;
     padding-left: 2rem;
@@ -23,13 +23,12 @@ body{
 .nav{
     position: fixed;
     display: flex;
-    justify-content: space-between;
     width:100%;
     height: 50px;
     padding-top: 0.5rem;
 }
 .nav2{
-    padding-left: 10rem;
+    padding-left: 20rem;
 }
 .mean{
     text-align: center;
