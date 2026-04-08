@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_img.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"rel="stylesheet">   
+   <title>Bhagavad Gita - Sign Up / Login</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fff8f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 400px;
+        background-color: #fff3e6;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        padding: 30px;
+        transition: height 0.3s ease;
+    }
+
+    h2 {
+        color: #d35400;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #e67e22;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: #d35400;
+    }
+
+    .switch {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .switch a {
+        color: #d35400;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .form.active {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sign Up Form -->
+    <div id="signup-form" class="form active">
+        <h2>Sign Up 🌟</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="switch">
+                Already have an account? <a id="show-login">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form" class="form">
+        <h2>Login 🙏</h2>
+        <form>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="Enter your email" required>
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+
+            <div class="switch">
+                Don't have an account? <a id="show-signup">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    const signupForm = document.getElementById('signup-form');
+    const loginForm = document.getElementById('login-form');
+    const showLogin = document.getElementById('show-login');
+    const showSignup = document.getElementById('show-signup');
+
+    showLogin.addEventListener('click', () => {
+        signupForm.classList.remove('active');
+        loginForm.classList.add('active');
+    });
+
+    showSignup.addEventListener('click', () => {
+        loginForm.classList.remove('active');
+        signupForm.classList.add('active');
+    });
+</script>
+
+</body>
+</html>

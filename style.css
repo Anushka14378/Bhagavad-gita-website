@@ -1,0 +1,87 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    color:black;
+    background-color: bisque;
+}
+.main{
+    height:49rem;
+    width: 100%;
+    background-image: url('gita1.jpg');
+    background-size: cover;
+}
+.a1{   
+    font-size: 2rem;
+    text-decoration: none;
+    color: brown;
+    padding-left: 2rem;
+}
+.a2{
+  
+    color: black;
+}
+.nav{
+    position: fixed;
+    display: wrap;
+    justify-content: space-between;
+    width:100%;
+    height: 50px;
+    padding-top: 0.5rem;
+}
+.nav2{
+    padding-left:63rem;
+}
+.mean{
+    text-align: center;
+    color:black;
+    margin-top: 5rem;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.shloka{
+    color:#d32f2f;
+    font-weight:bold;
+    margin-top:10px;
+}
+.chapters{
+    text-align: center;
+    margin-top: 4rem;
+}
+.exp{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.about1{
+    text-align: center;
+}
+footer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+#about{
+    border-top: 1px solid black;
+}
+
