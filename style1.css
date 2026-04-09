@@ -11,10 +11,10 @@ body{
     background-size: cover;
 }
 .a1{   
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: brown;
-    padding-left: 2rem;
+    padding: 5px 10px;
 }
 .a2{
   
