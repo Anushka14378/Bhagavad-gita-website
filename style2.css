@@ -5,10 +5,12 @@ body{
     background-color: bisque;
 }
 .main{
-    height:49rem;
     width: 100%;
+    min-height: 100vh;   
     background-image: url('gita1.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .a1{   
     font-size: 1.2rem;
